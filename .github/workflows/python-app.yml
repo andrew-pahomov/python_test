@@ -28,10 +28,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Test with unittest
-      run: |
-        python3 -m unittest aqa_unit_unittest
     - name: Test with pytest
       run: |
         pytest -v aqa_unit_unittest.py
         pytest -v aqa_unit_pytest.py
+    - name: Test with unittest
+      run: |
+        python3 -m unittest aqa_unit_unittest
