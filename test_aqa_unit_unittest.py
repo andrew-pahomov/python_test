@@ -1,6 +1,7 @@
 import unittest
 import cashback_service
 
+
 class TestUnittest(unittest.TestCase):
     def test_500(self):
         cashback_servise = cashback_service.CashbackHackService()
@@ -11,6 +12,7 @@ class TestUnittest(unittest.TestCase):
         cashback_servise = cashback_service.CashbackHackService()
         actual = cashback_servise.remain(1000)
         self.assertEqual(actual, 0)
+
 
 if __name__ == "__main__":
     unittest.main()
