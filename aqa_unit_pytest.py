@@ -11,3 +11,4 @@ def test_1000():
     cashback = cashback_service.CashbackHackService()
     actual = cashback.remain(1000)
     assert actual == 0
+
